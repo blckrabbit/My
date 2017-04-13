@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view style="padding:25px 0 0 0;height:{{Height-25}}px">
+  <view  bindtap="bindViewTap" class="userinfo" style="display:none;" >
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto"  style="display:none;">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+<swiper indicator-dots="{{indicatorDots}}" bindchange="swiperBind"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:{{Height-138}}px;">
+  <!--适用类型：简历-->
+    <swiper-item class="yu_01">
+      <view class="jian_01" style="width:{{Width-80}}px;">
+        <view style="width:100%;height:auto;align-items: center; display: flex;flex-direction: column;">
+          <view class="u_hea_cls"></view>
+          <view class="line_01" style="width:55%;margin-top:40px;"></view>
+          <view class="line_01"  style="width:80%;"></view>
+          <view class="line_01"  style="width:45%;"></view>
+          <view class="line_01"  style="width:80%;"></view>
+          <view class="line_01"  style="width:60%;"></view>
+          <view class="line_01"  style="width:80%;"></view>
+          <view class="line_01"  style="width:80%;"></view>
+          <view class="line_01"  style="width:90%;"></view>
+        </view>
+      </view>
+    </swiper-item>
+    <!--适用类型：员工牌、嘉宾牌-->
+    <swiper-item class="yu_01">
+      <view class="jian_01" style="width:{{Width-120}}px;height:{{Height-230}}px;padding: 20px;">
+       <view style="width:100%;height:auto;align-items: center; display: flex;flex-direction: column;">
+        <view class="u_hea_cls"></view>
+        <view class="line_01"  style="width:100%;margin-top:35px;"></view>
+        <view class="line_01"  style="width:60%;"></view>
+          <view class="line_01"  style="width:80%;"></view>
+        <view class="line_01"  style="width:65%;margin-top:35px;"></view>
+      </view>
+      </view>
+    </swiper-item>
+    <!--适用类型：明信片、贺卡...-->
+    <!--<swiper-item class="yu_01">
+      <view class="jian_01" style="width:{{Width-120}}px;height:{{Height-230}}px;padding: 20px;">
+       <view style="width:100%;height:auto;align-items: center; display: flex;flex-direction: column;">
+        <view class="line_01"  style="width:100%;margin-top:35px;"></view>
+        <view class="line_01"  style="width:60%;"></view>
+        <view class="line_01"  style="width:80%;"></view>
+        <view class="line_01"  style="width:80%;"></view>
+          <view class="line_01"  style="width:60%;"></view>
+          <view class="line_01"  style="width:80%;"></view>
+          <view class="line_01"  style="width:80%;"></view>
+          <view class="line_01"  style="width:90%;"></view>
+      </view>
+      </view>
+    </swiper-item>-->
+    <!--会员卡、银行卡、身份证、礼品卡...-->
+    <swiper-item class="yu_01">
+      <view class="jian_01" style="width:{{Width-110}}px;height:190px;padding: 20px;">
+        <view class="ti_cls" style="display:flex;margin-top:5px;"><view class="u_hea_cls" style="margin-top:0px;"></view><view class="line_01" style="width:55%;margin:37px 0 0 20px;"></view></view>
+        <view class="line_01"  style="width:100%;margin-top:30px;"></view>
+        <view class="line_01"  style="width:65%;margin-top:35px;"></view>
+      </view>
+    </swiper-item>
+    <!--优惠券...-->
+</swiper>
+
+<view class="bottom_btn_cls">
+  <view class="p_ol">
+    <button style="background-color: #01AA8F;" id="createId" bindtap="vClickEvent">创建{{carname}}</button>
+    <text class="tx_wen">?</text>
+  </view>
+</view>
+
+</view>

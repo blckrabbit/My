@@ -1,0 +1,97 @@
+/* pages/index/create.wxss */
+.item_col{
+    flex:1;height:150px;background-color: #01AA8F; margin-right:20px;border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.op_l{
+    height:50px;width:50px;background-color: #177966; float:left; border-radius:5px; margin-right:15px;
+}
+.op_a{
+    display:flex;padding:0  0 20px 20px;
+}
+.op_b{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    flex:1;height:190px;background-color: #01AA8F; margin-right:20px;color:#fff;border-radius: 5px;
+}
+.chunse{
+    background-color: #b4d110;
+}
+.zhaopian{
+    background-color: #01AA8F;
+}
+.jianbian{
+    background: #b4d110;
+    background: -moz-linear-gradient(top,  #b4d110 0%, #1f75d6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4d110), color-stop(100%,#1f75d6));
+    background: -webkit-linear-gradient(top,  #b4d110 0%,#1f75d6 100%);
+    background: -o-linear-gradient(top,  #b4d110 0%,#1f75d6 100%);
+    background: -ms-linear-gradient(top,  #b4d110 0%,#1f75d6 100%);
+    background: linear-gradient(to bottom,  #b4d110 0%,#1f75d6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4d110', endColorstr='#1f75d6',GradientType=0 );
+}
+:root .jianbian{filter:none;}
+.heibai{
+    background: #fff;
+    background: -moz-linear-gradient(21deg, #b353e5 50%,  #6c2eca 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#b353e5), color-stop(50%,#6c2eca));
+    background: -webkit-linear-gradient(21deg,#b353e5 50%,  #6c2eca 50%);
+    background: -o-linear-gradient(21deg,#b353e5 50%,  #6c2eca 50%);
+    background: -ms-linear-gradient(1deg,#b353e5 50%,  #6c2eca 50%);
+    background: linear-gradient(21deg,#b353e5 50%,  #6c2eca 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b353e5', endColorstr='#6c2eca',GradientType=0 );
+}
+.ziwo{
+    background: #fff;
+    background: -moz-linear-gradient(90deg,  #e05aaf 50%, #000 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#e05aaf), color-stop(50%,#000));
+    background: -webkit-linear-gradient(90deg,  #e05aaf 50%,#000 50%);
+    background: -o-linear-gradient(90deg,  #e05aaf 50%,#000 50%);
+    background: -ms-linear-gradient(90deg,  #e05aaf 50%,#000 50%);
+    background: linear-gradient(90deg,  #e05aaf 50%,#000 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e05aaf', endColorstr='#000',GradientType=0 );
+}
+.banfen{
+    background: #fff;
+    background: -moz-linear-gradient(to bottom right,  #c6a02d 50%, #cb7fee 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#c6a02d), color-stop(50%,#cb7fee));
+    background: -webkit-linear-gradient(to bottom right,  #c6a02d 50%,#cb7fee 50%);
+    background: -o-linear-gradient(to bottom right,  #c6a02d 50%,#cb7fee 50%);
+    background: -ms-linear-gradient(to bottom right,  #c6a02d 50%,#cb7fee 50%);
+    background: linear-gradient(to bottom right,  #c6a02d 50%,#cb7fee 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6a02d', endColorstr='#cb7fee',GradientType=0 );
+}
+.radial{
+    background: radial-gradient(18% 12%,#cb5252,#270202);
+    background:-webkit-radial-gradient(18% 12%,#cb5252,#270202);
+    background:-moz-radial-gradient(18% 12%,#cb5252,#270202);
+    background: -o-radial-gradient(18% 12%, #cb5252,#270202);
+    background: -ms-radial-gradient(18% 12%,#cb5252,#270202);
+}
+.tyl{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(red), to(blue));
+}
+.grad {
+  /* Safari 5.1 - 6.0 */
+  background: -webkit-linear-gradient(10deg,red,orange,yellow,green,blue,indigo,violet);
+  /* Opera 11.1 - 12.0 */
+  background: -o-linear-gradient(10deg,red,orange,yellow,green,blue,indigo,violet);
+  /* Firefox 3.6 - 15 */
+  background: -moz-linear-gradient(10deg,red,orange,yellow,green,blue,indigo,violet);
+  /* 标准的语法 */
+  background: linear-gradient(10deg, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+.grad_02 {
+  background:radial-gradient(90px at top right, #904fe9, #904fe9, #5323db, transparent),radial-gradient(25px at 30px 120px, #b79325, #ffff00, #de4f92, transparent),radial-gradient(25px at 60px 60px, #b79325, #ffff00, #de4f92);
+  background:-webkit-radial-gradient(90px at top right, #904fe9, #904fe9, #5323db, transparent),radial-gradient(25px at 30px 120px, #b79325, #ffff00, #de4f92, transparent),radial-gradient(25px at 60px 60px, #b79325, #ffff00, #de4f92);
+}
+.pol_k{
+    border:#e5e5e5 solid 3px;height:44px;width:44px;
+}

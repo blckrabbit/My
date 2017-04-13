@@ -1,0 +1,10 @@
+<view style="padding:25px 0 0 0;height:{{Height-25}}px">
+    <block wx:for="{{arr}}" wx:for-item="item" wx:for-index="ids">
+        <block wx:if="{{ids==0}}">
+            <navigator  url="url" style="padding:15px;border-bottom:#eee solid 1px;border-top:#eee solid 1px;">{{item}}</navigator>
+        </block>
+        <block wx:else>
+            <navigator  url="url" style="padding:15px;border-bottom:#eee solid 1px;">{{item}}</navigator>
+        </block>
+    </block>
+</view>

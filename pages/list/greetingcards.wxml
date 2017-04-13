@@ -1,0 +1,17 @@
+<view style="padding:20px 0 20px 0;height:{{Height-25}}px;align-items: center;justify-content: center;">
+    <block wx:for="{{datas}}" wx:for-index="ids" wx:for-item="item">
+        <block wx:if="{{(ids+1)%2==0}}">
+            <navigator url="../detail/greetingcard?no={{item[2]}}" style="width:41%;margin-right:20px;float:right;" >
+                 <image src="{{item[1]}}" mode="widthFix" style="width:100%;"></image>
+                <view>{{item[0]}}</view>
+            </navigator>
+        </block>
+        <block wx:else>
+            <navigator url="../detail/greetingcard?no={{item[2]}}" style="width:41%;margin-left:20px;float:left;" >
+                 <image src="{{item[1]}}" mode="widthFix" style="width:100%;"></image>
+                <view>{{item[0]}}</view>
+            </navigator>
+        </block>
+           
+    </block>
+</view>

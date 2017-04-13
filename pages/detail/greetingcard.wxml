@@ -1,0 +1,4 @@
+<view style="padding:25px 0 0 0;height:{{Height-25}}px">
+     <video id="myVideo" src="http://cn.office-converter.com/OnlinePHP/download.php?filename=Free-Converter.com-3295-34474117.mp4" autoplay="{{true}}" objectFit="fill" enable-danmu="{{false}}" danmu-btn="{{false}}" controls="{{true}}"></video>
+     <img src="{{url}}" style="width:70px;height:70px;" />
+</view>

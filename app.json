@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/cards",
+    "pages/index/create",
+    "pages/index/style",
+    "pages/Them/work",
+    "pages/Them/greetingCard",
+    "pages/Them/certificate",
+    "pages/list/greetingcards",
+    "pages/detail/greetingcard"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MY",
+    "navigationBarTextStyle":"black"
+  }
+}

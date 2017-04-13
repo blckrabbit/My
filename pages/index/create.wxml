@@ -1,0 +1,41 @@
+<view style="padding:15px 0 0 0;">
+    <view style="margin-left:20px;font-size:15px;">颜色</view>
+    <view>
+    <scroll-view scroll-x="true" scroll-with-animation="true" style="width:100%;">
+        <view style="padding:10px 0 20px 20px;width:900px;">
+            <block wx:for="{{colors}}" wx:key="index" wx:for-index="idx" wx:for-item="item">
+                <block wx:if="{{chooseindex==idx}}">
+                    <text bindtap="vCClick" class="op_l pol_k" data-index="{{idx}}" style="background-color: #{{item}};"></text>
+                </block>
+                <block wx:else>
+                    <text bindtap="vCClick" class="op_l" data-index="{{idx}}" style="background-color: #{{item}};"></text>
+                </block>
+            </block>
+        </view>
+        </scroll-view>
+    </view>
+    <view style="padding:25px 20px 13px 20px;font-size:15px;">主题</view>
+    <view>
+    <scroll-view scroll-y="true" scroll-with-animation="true" style="height:{{Height-160}}px;">
+     <view style="height:auto;">
+        <!--<view class="op_a">
+            <view class="op_b" style="background-color: #e2e2e2;">实习</view>
+            <view class="op_b" style="background-color: #e2e2e2;">>正式</view>
+        </view>-->
+        <block wx:for="{{clss}}" wx:key="index" wx:for-index="cidx" wx:for-item="citem">
+            <view class="op_a">
+                <block wx:for="{{citem}}" wx:key="index" wx:for-index="idx" wx:for-item="item">
+                    <block wx:if="{{chooseThemindex!=undefined && chooseThemindex==idx && chooseThemcindex==cidx}}">
+                        <view bindtap="vMClick" data-index="{{idx}}" data-cindex="{{cidx}}" class="op_b {{item[0]}}" style="height:184px;border:#e5e5e5 solid 3px;">{{item[1]}}</view>
+                    </block>
+                    <block wx:else>
+                        <view bindtap="vMClick" data-index="{{idx}}" data-cindex="{{cidx}}" class="op_b {{item[0]}}">{{item[1]}}</view>
+                    </block>
+                </block>
+            </view>
+        </block>
+        
+    </view>
+    </scroll-view>
+    </view>
+</view>
